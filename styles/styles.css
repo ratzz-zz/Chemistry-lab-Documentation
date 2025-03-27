@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -17,6 +18,7 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: row;
+    overflow-x: hidden;
 }
 
 /* Navigation menu */
@@ -24,15 +26,18 @@ body {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
+    margin: 10px 0;
 }
 
 #navbar {
-    height: max-content;
+    height: 100vh;
     width: 20%;
-    padding: 0;
-    margin: 0;
-    position: relative;
+    padding: 5px;
+    margin-left: -40px;
+    position: sticky;
     top: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
 
 .nav-link {
@@ -42,6 +47,11 @@ body {
 
 .nav-link:hover {
     color: #c79a99;
+}
+
+nav-list {
+    padding: 0;
+    margin: 0;
 }
 
 .nav-list li {
@@ -99,7 +109,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-.symbols-container .symbol {
+.symbols-container img {
     margin-right: 10px;
     height: auto;
     width: 100%;
@@ -134,15 +144,24 @@ h3 {
 /* Responsive design */
 @media screen and (max-width: 768px) {
     body {
-        flex-direction: column;
+        flex-direction: row;
+        overflow-x: hidden;
+        font-size: calc(100% - 8px);
     }
 
     #navbar {
-        width: 100%;
-        text-align: center;
+        width: 35%;
+        height: 100vh;
+        overflow-y: auto;
+        position: fixed;
+        left: 0;
+        top: 0;
     }
 
     #main-doc {
-        width: 100%;
+        width: 65%;
+        margin-left: 20%;
+        padding: 10px;
     }
+
 }
