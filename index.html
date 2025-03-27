@@ -8,13 +8,13 @@
     <link rel="preload" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <nav id="navbar">
       <header>Documentation Overview</header>
-      <ul>
+      <ul class="nav-list">
         <li><a class="nav-link" href="#introduction">Introduction</a></li>
         <li><a class="nav-link" href="#safety_procedures">Safety Procedures</a></li>
         <li><a class="nav-link" href="#basic_lab_equipment">Basic Lab Equipment</a></li>
@@ -67,7 +67,7 @@
         <article>
           <p>Chemists rely on a variety of chemicals to conduct experiments. Some common laboratory chemicals include hydrochloric acid (HCl), sodium hydroxide (NaOH), sulfuric acid (H₂SO₄), and sodium chloride (NaCl). These chemicals are used in a wide range of experiments, such as neutralization reactions, titrations, and preparation of solutions.</p>
           <p>It’s important for students to be familiar with the properties of these chemicals, such as their pH levels, reactivity, and potential hazards. For example, sodium hydroxide is a strong base and can cause severe burns, while sulfuric acid is a strong acid that can be highly corrosive.</p>
-          <code>Always add acid to water, not the other way around, to avoid exothermic reactions that could cause splashing.</code>
+          <div class="code-text"><code>Always add acid to water, not the other way around, to avoid exothermic reactions that could cause splashing.</code></div>
         </article>
       </section>
       <section class="main-section" id="handling_and_storing_chemicals">
@@ -87,7 +87,7 @@
         <article>
           <p>Accurate measurement is a key component of any scientific experiment. In the laboratory, students will commonly use graduated cylinders, burettes, pipettes, and balances. Each piece of equipment has a specific role: graduated cylinders measure volume, burettes and pipettes are used for precise liquid dispensing, and balances measure the mass of solids and liquids.</p>
           <p>Students should be trained in using each tool correctly to obtain accurate results. For instance, when using a burette for titrations, it’s crucial to release the liquid slowly and read the meniscus at eye level to avoid errors.</p>
-          <code>Use pipettes for precise measurement of liquids, as they allow for more accurate dispensing than beakers or flasks.</code>
+          <div class="code-text"><code>Use pipettes for precise measurement of liquids, as they allow for more accurate dispensing than beakers or flasks.</code></div>
         </article>
       </section>
       <section class="main-section" id="common_laboratory_glassware">
@@ -95,7 +95,7 @@
         <article>
           <p>Glassware is a staple in the chemistry lab. Items such as beakers, flasks, test tubes, and pipettes are used in various experiments. It is important to choose the right glassware for the experiment’s needs, such as using Erlenmeyer flasks for mixing or heating liquids, or volumetric flasks for precise solution preparation.</p>
           <p>Before using any glassware, it should be cleaned thoroughly to prevent contamination of chemicals and ensure accurate results. Glassware should also be checked for cracks or chips, as damaged glassware can cause spills or accidents.</p>
-          <code>Glassware should be handled with care to avoid breakage. Always inspect it for cracks or chips before use. After use, thoroughly clean all glassware to prevent cross-contamination in future experiments.</code>
+          <div class="code-text"><code>Glassware should be handled with care to avoid breakage. Always inspect it for cracks or chips before use. After use, thoroughly clean all glassware to prevent cross-contamination in future experiments.</code></div>
         </article>
       </section>
       <section class="main-section" id="lab_safety_signs_and_symbology">
@@ -104,12 +104,20 @@
           <p>Laboratories use specific symbols to communicate the presence of hazards. Understanding these symbols is critical for staying safe. Common symbols include the flame symbol for flammable materials, the exclamation mark for irritants, and the corrosion symbol for substances that can cause severe damage to living tissue or materials.</p>
           <p>These symbols are typically displayed on chemical containers, safety equipment, or instructions to ensure immediate identification of risks. It's crucial to familiarize yourself with these symbols and understand their meaning before handling any chemicals.</p>
           <h3>Symbols to Know:</h3>
-          <img src="https://th.bing.com/th/id/R.64489b61ceb9bf4df192dd58acb4e07c?rik=bxQzLgtbaw6bew&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0194%2f3447%2fproducts%2fFlammable_COSHH_Label_large.png%3fv%3d1443425804&ehk=pL0vzPCZA%2feIxDwEBFyY6ZXdjx30iaiwkV5DrAwu9ZM%3d&risl=&pid=ImgRaw&r=0" alt="Flammable Symbol">
-          <p class="caption">Flame: Indicates flammable material.</p>
-          <img src="https://cdn11.bigcommerce.com/s-8t7jf909gs/images/stencil/2560w/products/3331/3226/GHS_Exclamation_Mark_Symbol-GHS102M__62089.1635381607.png?c=1" alt="Health Hazard Symbol">
-          <p class="caption">Exclamation point: Indicates a substance that can cause irritation or health hazards.</p>
-          <img src="https://th.bing.com/th/id/R.98c2b570004ef1b9b50d1d90d9600862?rik=JbhMFn0bFU8x0Q&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fRcA%2fBRy%2fRcABRyaji.png&ehk=kNfv%2bT%2fFahMYriFi4f5xSbFMQEozGDuHcq0bDjXWEeA%3d&risl=&pid=ImgRaw&r=0" alt="Corrosive Symbol">
-          <p class="caption">Corrosion: Indicates substances that can cause skin or eye damage.</p>
+          <div class="symbols-container">
+            <div class="symbol-row">
+              <img class="symbol" src="https://th.bing.com/th/id/R.64489b61ceb9bf4df192dd58acb4e07c?rik=bxQzLgtbaw6bew&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0194%2f3447%2fproducts%2fFlammable_COSHH_Label_large.png%3fv%3d1443425804&ehk=pL0vzPCZA%2feIxDwEBFyY6ZXdjx30iaiwkV5DrAwu9ZM%3d&risl=&pid=ImgRaw&r=0" alt="Flammable Symbol">
+              <p class="caption">Flame: Indicates flammable material.</p>
+            </div>
+            <div class="symbol-row">
+              <img class="symbol" src="https://cdn11.bigcommerce.com/s-8t7jf909gs/images/stencil/2560w/products/3331/3226/GHS_Exclamation_Mark_Symbol-GHS102M__62089.1635381607.png?c=1" alt="Health Hazard Symbol">
+              <p class="caption">Exclamation point: Indicates a substance that can cause irritation or health hazards.</p>
+            </div>
+            <div class="symbol-row">
+              <img class="symbol" src="https://th.bing.com/th/id/R.98c2b570004ef1b9b50d1d90d9600862?rik=JbhMFn0bFU8x0Q&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fRcA%2fBRy%2fRcABRyaji.png&ehk=kNfv%2bT%2fFahMYriFi4f5xSbFMQEozGDuHcq0bDjXWEeA%3d&risl=&pid=ImgRaw&r=0" alt="Corrosive Symbol">
+              <p class="caption">Corrosion: Indicates substances that can cause skin or eye damage.</p>
+            </div>
+          </div>
         </article>
       </section>
       <section class="main-section" id="chemical_reactions_in_the_lab">
@@ -117,7 +125,7 @@
         <article>
           <p>In the chemistry lab, students will conduct various types of chemical reactions, including synthesis, decomposition, combustion, and single replacement reactions. Each reaction type involves different substances and can result in a range of outcomes, such as the release of gases, the formation of precipitates, or the absorption of heat.</p>
           <p>Students must always be aware of the reaction conditions (e.g., temperature, concentration, and catalysts) and how they influence the reaction. Proper equipment should be used to control the reaction, such as fume hoods for reactions producing gases.</p>
-          <code>Some reactions can be exothermic (releasing heat), so proper precautions should be taken, such as using heat-resistant gloves or shields.</code>
+          <div class="code-text"><code>Some reactions can be exothermic (releasing heat), so proper precautions should be taken, such as using heat-resistant gloves or shields.</code></div>
         </article>
       </section>
       <section class="main-section" id="waste_disposal_and_cleanup">
@@ -132,7 +140,7 @@
         <article>
           <p>Keeping accurate and detailed lab notes is essential for understanding and reporting on experiments. Every experiment should be carefully documented, including the procedure, observations, and any data collected. Lab notes serve as a reference for future experiments and allow students to track their progress.</p>
           <p>Students should record their findings in a well-organized lab notebook. It’s helpful to use tables, diagrams, and graphs to represent data clearly.</p>
-          <code>Include any problems encountered during the experiment and how they were resolved.</code>
+          <div class="code-text"><code>Include any problems encountered during the experiment and how they were resolved.</code></div>
         </article>
       </section>
       <section class="main-section" id="references">

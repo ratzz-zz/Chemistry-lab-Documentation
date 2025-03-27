@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #272030;
+    color: #e3ebf2;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 100vw;
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Navigation menu */
+#navbar header {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#navbar {
+    height: max-content;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #e3ebf2;
+}
+
+.nav-link:hover {
+    color: #c79a99;
+}
+
+.nav-list li {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: #e3ebf2 1px dashed;
+}
+
+/* Main content */
+#main-doc {
+    width: 80%;
+    padding: 10px 30px;
+}
+
+header {
+    color: #c79a99;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main-section {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: #e3ebf2 1px solid;
+}
+
+/* Content style */
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.code-text {
+    border-radius: 10px;
+    margin: 15px 25px;
+    background-color: #c79a99;
+    text-align: center;
+    color: #272030;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.symbols-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.symbols-container .symbol-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.symbols-container .symbol {
+    margin-right: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 80px;
+}
+
+.symbols-container p {
+    margin: 0;
+}
+
+/* References */
+#references header {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#references li {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+#references a {
+    text-decoration: none;
+    color: #e3ebf2;
+}
+
+#references a:hover, #references a:visited {
+    color: #c79a99;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+        width: 100%;
+        text-align: center;
+    }
+
+    #main-doc {
+        width: 100%;
+    }
+}
