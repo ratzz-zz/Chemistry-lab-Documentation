@@ -150,7 +150,7 @@ h3 {
     }
 
     #navbar {
-        width: 35%;
+        width: 40%;
         height: 100vh;
         overflow-y: auto;
         position: fixed;
@@ -160,8 +160,18 @@ h3 {
 
     #main-doc {
         width: 65%;
-        margin-left: 20%;
+        margin-left: 35%;
         padding: 10px;
+    }
+
+    header {
+        font-size: 18px;
+        word-wrap: break-word;
+        padding-left: 40px;
+    }
+
+    code {
+        font-size: 10px;
     }
 
 }
